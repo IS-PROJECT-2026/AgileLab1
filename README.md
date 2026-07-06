@@ -4,4 +4,5 @@
 
 ### The Executives
 * **Jan Isaac** - Chief Executive Officer
+* **Said Bakari** - Chief Technology Officer
 
