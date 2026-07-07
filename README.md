@@ -4,4 +4,4 @@
 
 ### The Executives
 * **Jan Isaac** - Chief Executive Officer
-
+* ** Anisa Abdulle** - Chief Technology Officer
