@@ -5,3 +5,4 @@
 ### The Executives
 * **Jan Isaac** - Chief Executive Officer
 * **Quincy Njuguna** - Chief Technology Officer
+* **Said Bakari** - Chief Operationg Officer
