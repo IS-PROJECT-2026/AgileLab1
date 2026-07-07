@@ -1,59 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Executive Team Profiles</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Executive Team Profiles</title>
+<style>
+  :root{
+    --bg: #0A0E12;
+    --panel: #10161C;
+    --cyan: #00E5D4;
+    --laterite: #C1502E;
+    --text: #E8ECEE;
+    --muted: #8A97A0;
+  }
+  *{ box-sizing: border-box; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    padding: 50px 20px 80px;
+  }
+  .directory-header{
+    max-width: 760px;
+    margin: 0 auto 44px;
+    text-align:center;
+  }
+  .eyebrow{
+    color: var(--cyan);
+    font-family: 'Consolas', monospace;
+    font-size: 13px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+  }
+  .directory-header p{
+    color: var(--muted);
+    font-size: 15.5px;
+    margin:0;
+  }
+  .grid{
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  section, div.executive-profile, div.chief-data-profile{
+    background: var(--panel);
+    border: 1px solid #1E2833;
+    border-radius: 14px;
+    padding: 28px 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 !important;
+  }
+  section::before,
+  div.executive-profile::before,
+  div.chief-data-profile::before{
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0;
+    height:3px;
+    background: linear-gradient(90deg, var(--cyan), var(--laterite));
+  }
+  h3, h2{
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 14px;
+  }
+  h3 a{
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--cyan);
+  }
+  h3 a:hover{ color: var(--cyan); }
+  p{
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0 0 10px;
+  }
+  p:last-child{ margin-bottom: 0; }
+  strong{
+    font-family: 'Consolas', monospace;
+    font-size: 12px;
+    color: var(--laterite);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+  }
+</style>
 </head>
 <body>
+
+  <div class="directory-header">
+    <div class="eyebrow">COMMITed Ltd.</div>
     <h1>Corporate Executive Directory</h1>
     <p>Meet the engineering minds driving our technical operations.</p>
+  </div>
+
+  <div class="grid">
 
     <!-- TEAM PROFILES GO BELOW THIS LINE -->
 
-    <section style="margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
-    <h3>Jan Isaac</h3>
-    <p><strong>Professional Bio:</strong> The CEO and founder of COMMITed ltd. with a strong background in technology, systems development, and strategic leadership</p>
-    <p><strong>Core Tech Stack:</strong> React, Node.js, PostgreSQL, Python</p>
-    <p><strong>Key Project Focus:</strong>Leading the design and optimization of application development by Overseeing the design, 
-        user experience and lifecycle of the software solutions</p>
-</section>
+    <section>
+      <h3>Jan Isaac</h3>
+      <p><strong>Professional Bio</strong>The CEO and founder of COMMITed ltd. with a strong background in technology, systems development, and strategic leadership</p>
+      <p><strong>Core Tech Stack</strong>React, Node.js, PostgreSQL, Python</p>
+      <p><strong>Key Project Focus</strong>Leading the design and optimization of application development by Overseeing the design, user experience and lifecycle of the software solutions</p>
+    </section>
 
-<section style="margin-bottom:20px; border-bottom:1px solid #ccc; padding-bottom:10px;">
+    <section>
+      <h3>Anisa Abdulle</h3>
+      <p><strong>Professional Bio</strong>I am a software engineering student interested in full-stack development and cybersecurity.</p>
+      <p><strong>Core Tech Stack</strong>HTML, CSS, PHP, MySQL</p>
+      <p><strong>Key Project Focus</strong>Developing secure web-based management systems.</p>
+    </section>
 
-<h3>Anisa Abdulle</h3>
+    <div class="executive-profile">
+      <h2>Jefferson Quincy</h2>
+      <p><strong>Professional Bio</strong>I am a Software Engineering student at Strathmore University with an interest in backend development, IoT systems, and cloud technologies. I enjoy building reliable applications and solving real-world engineering problems through practical software solutions.</p>
+      <p><strong>Core Tech Stack</strong>JavaScript, Node.js, Python, MySQL</p>
+      <p><strong>Key Project Focus</strong>Optimizing backend services and improving system reliability through efficient database design and API development.</p>
+    </div>
 
-<p><strong>Professional Bio:</strong> I am a software engineering student interested in full-stack development and cybersecurity.</p>
+    <div class="chief-data-profile">
+      <h3><a href="otto.html">Oyieri Jermaine Obed Otto</a></h3>
+      <p><strong>Professional Bio</strong>Final-year Informatics &amp; Computer Science student at Strathmore University, focused on building data-driven, full-stack systems that turn messy real-world processes into clean, usable software.</p>
+      <p><strong>Core Tech Stack</strong>Django REST, Python, scikit-learn, MySQL, JavaScript</p>
+      <p><strong>Key Project Focus</strong>Leading development of a data-driven water sales and order management system with predictive analytics for demand forecasting.</p>
+    </div>
 
-<p><strong>Core Tech Stack:</strong> HTML, CSS, PHP, MySQL</p>
-
-<p><strong>Key Project Focus:</strong> Developing secure web-based management systems.</p>
-
-<div class="executive-profile">
-    <h2>Jefferson Quincy</h2>
-
-    <p>
-        <strong>Professional Bio:</strong>
-        I am a Software Engineering student at Strathmore University with an interest in backend development, IoT systems, and cloud technologies. I enjoy building reliable applications and solving real-world engineering problems through practical software solutions.
-    </p>
-
-    <p>
-        <strong>Core Tech Stack:</strong>
-        JavaScript, Node.js, Python, MySQL
-    </p>
-
-    <p>
-        <strong>Key Project Focus:</strong>
-        Optimizing backend services and improving system reliability through efficient database design and API development.
-    </p>
-</div>
-
-<div class="chief-data-profile">
-  <h3><a href="otto-profile.html">Oyieri Jermaine Obed Otto</a></h3>
-  <p><strong>Professional Bio:</strong> Final-year Informatics & Computer Science student at Strathmore University, focused on building data-driven, full-stack systems that turn messy real-world processes into clean, usable software.</p>
-  <p><strong>Core Tech Stack:</strong> Django REST, Python, scikit-learn, MySQL, JavaScript</p>
-  <p><strong>Key Project Focus:</strong> Leading development of a data-driven water sales and order management system with predictive analytics for demand forecasting.</p>
-</div>
-
-</section>
+  </div>
 
 </body>
 </html>
