@@ -6,4 +6,5 @@
 * **Jan Isaac** - Chief Executive Officer
 * **Anisa Abdulle** - Chief Software Engineer
 * **Quincy Njuguna** - Chief Technology Officer
+* **Oyieri Jermaine Obed Otto** – Chief Data Officer
 
