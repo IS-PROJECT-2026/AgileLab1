@@ -4,6 +4,6 @@
 
 ### The Executives
 * **Jan Isaac** - Chief Executive Officer
-* ** Anisa Abdulle** - Chief Software Engineer
+* **Anisa Abdulle** - Chief Software Engineer
 * **Quincy Njuguna** - Chief Technology Officer
 
