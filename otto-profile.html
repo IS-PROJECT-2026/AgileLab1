@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Otto — Chief Data Officer</title>
+<style>
+  :root{
+    --bg: #0A0E12;
+    --panel: #10161C;
+    --cyan: #00E5D4;
+    --laterite: #C1502E;
+    --text: #E8ECEE;
+    --muted: #8A97A0;
+  }
+  *{ box-sizing: border-box; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 40px 20px;
+  }
+  .card{
+    max-width: 620px;
+    width:100%;
+    background: var(--panel);
+    border: 1px solid #1E2833;
+    border-radius: 14px;
+    padding: 44px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before{
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0;
+    height:3px;
+    background: linear-gradient(90deg, var(--cyan), var(--laterite));
+  }
+  .back{
+    display:inline-block;
+    margin-bottom: 28px;
+    color: var(--muted);
+    text-decoration:none;
+    font-size: 13px;
+    letter-spacing: .05em;
+  }
+  .back:hover{ color: var(--cyan); }
+  .eyebrow{
+    color: var(--cyan);
+    font-family: 'Consolas', monospace;
+    font-size: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  h1{
+    font-size: 38px;
+    font-weight: 800;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .title{
+    color: var(--laterite);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+  .bio{
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 15.5px;
+    margin-bottom: 28px;
+  }
+  .block-label{
+    font-family: 'Consolas', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom: 26px;
+  }
+  .chip{
+    font-family: 'Consolas', monospace;
+    font-size: 12.5px;
+    background: #16202A;
+    border: 1px solid #223040;
+    color: var(--cyan);
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
+  .focus{
+    border-left: 2px solid var(--cyan);
+    padding-left: 16px;
+    font-size: 14.5px;
+    color: var(--muted);
+    margin-bottom: 30px;
+  }
+  .feed{
+    font-family: 'Consolas', monospace;
+    font-size: 13px;
+    color: var(--cyan);
+    background:#080B0E;
+    border:1px solid #1E2833;
+    border-radius: 8px;
+    padding: 12px 14px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .feed::after{
+    content:"▌";
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink{ 50%{ opacity:0; } }
+</style>
+</head>
+<body>
+  <div class="card">
+    <a class="back" href="index.html">&larr; back to executive directory</a>
+    <div class="eyebrow">Executive Profile</div>
+    <h1>Oyieri Jermaine Obed Otto</h1>
+    <div class="title">Chief Data Officer</div>
+
+    <div class="bio">
+      Final-year Informatics &amp; Computer Science student at Strathmore University,
+      focused on turning messy real-world processes into clean, data-driven systems —
+      from predictive sales pipelines to IoT dashboards.
+    </div>
+
+    <div class="block-label">Core Tech Stack</div>
+    <div class="stack">
+      <span class="chip">Django REST</span>
+      <span class="chip">Python</span>
+      <span class="chip">scikit-learn</span>
+      <span class="chip">MySQL</span>
+      <span class="chip">JavaScript</span>
+    </div>
+
+    <div class="block-label">Key Focus</div>
+    <div class="focus">
+      Leading DDWSOMS — a data-driven water sales &amp; order management system
+      with predictive demand forecasting.
+    </div>
+
+    <div class="feed" id="feed"></div>
+  </div>
+
+  <script>
+    const line = "> status: analyzing sales data streams...";
+    const el = document.getElementById('feed');
+    let i = 0;
+    function type(){
+      if(i <= line.length){
+        el.textContent = line.slice(0, i);
+        i++;
+        setTimeout(type, 45);
+      }
+    }
+    type();
+  </script>
+</body>
+</html>
